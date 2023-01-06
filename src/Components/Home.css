@@ -1,0 +1,13 @@
+.Home {
+    position: relative;
+    min-height: 100vh;
+}
+
+.bg {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: ;
+}
