@@ -1,6 +1,7 @@
 {
     "conventionalCommits.scopes": [
         "Home Page",
-        "navbar"
+        "navbar",
+        "About me "
     ]
 }
