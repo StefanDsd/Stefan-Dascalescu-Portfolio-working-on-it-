@@ -2,6 +2,7 @@
     "conventionalCommits.scopes": [
         "Home Page",
         "navbar",
-        "About me "
+        "About me ",
+        "my projects"
     ]
 }
