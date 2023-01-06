@@ -1,0 +1,92 @@
+
+
+.nav {
+    position: fixed;
+    display: flex;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.nav .menu {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background: linear-gradient(var(--clr-sec), var(--clr-pri));
+    margin: 0 15px;
+    bottom: 0;
+    cursor: pointer;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: 0.2s ease;
+}
+
+.nav .menu.active {
+    animation: inset 1s ease forwards;
+    animation-delay: calc(var(--d) * .25s);
+}
+@keyframes inset {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.nav .menu a {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    color: rgba(255, 255, 255, 0.849);
+    text-decoration: none;
+
+}
+
+.nav .menu:hover {
+    bottom: 15px;
+}
+
+#tooltip {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 10px;
+    border-radius: 4px;
+    color: var(--clr-pri);
+    font-size: 13px;
+    font-weight: 700px;
+    background-color: hsl(0, 0%, 100%, 0.685);
+    backdrop-filter: blur(15px);
+    z-index: -1;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.2s ease;
+}
+
+#tooltip::after {
+    position: absolute;;
+    content: '';
+    top: 100%;
+    border-top-color: hsl(0, 0%, 100%, .685);
+    height: 0;
+    width: 0;
+
+}
+
+.nav .menu:hover #tooltip {
+opacity: 1;
+transform: translateY(-50px);
+}
+
+@media (max-width: 850px) {
+    
+}
