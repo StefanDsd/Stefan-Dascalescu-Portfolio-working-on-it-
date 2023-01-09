@@ -88,4 +88,35 @@
     border-radius: 10%;
     cursor: pointer;
     padding: 20px;
+    transition: transform  0.2 ease;
+}
+
+.contact.socials.icon::before {
+    position: absolute;
+    content: "";
+    top: calc(100% * 2px);
+    height: 45vh;
+    width: 2px;
+    background-color: rgba(255, 255, 255, 0.575);
+}
+
+.contact .socials .icon::after {
+    position: absolute;
+    content: "";
+    top: calc(100% * 2px);
+    height: 0;
+    width: 2px;
+    background-color: var(--c);
+    transition: 0.2s 0.1s
+
+}
+
+.contact .socials .icon:hover::after {
+    height: 4vh;
+
+}
+
+.contact.socials.icon:hover {
+    border: 2px solid var(--c);
+    transform: translateY(-20px);
 }

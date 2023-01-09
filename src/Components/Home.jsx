@@ -24,11 +24,13 @@ function Home() {
         <div className="content">
             <h1>
                 <c>eXplore</c> my <d>portfolio</d>
-            </h1> 
-
-            {/* typewritter effect  */}
-            <h1 className="">{introdata.title}</h1>
-                <h1 className="">
+            </h1>
+            <a href="#collection" className='show-me'>
+                <span> show me</span>
+                 </a>
+                  {/* typewritter effect  */}
+            <h1 className="typewritter-text">{introdata.title}</h1>
+                <h1 className="typewritter-text1">
                   <Typewriter
                     options={{
                       strings: [
@@ -42,10 +44,6 @@ function Home() {
                     }}
                   />
                 </h1>
-
-            <a href="#collection" className='show-me'>
-                <span> show me</span>
-                 </a>
         </div>
     </div>
   )

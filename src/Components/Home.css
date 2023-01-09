@@ -19,8 +19,9 @@
 .bg img {
   height: 100%;
   width: 100%;
+  background-size: 100%;
   /* object-fit: contain; */
-  /* animation: glow 2s ease 5.5 infinite; */
+  animation: glow 2s ease 5.5 infinite;
 }
 
 @keyframes glow {
@@ -60,7 +61,7 @@
 .content h1 {
   color: white;
   font-family: Nova Round, cursive;
-  font-size: 80px;
+  font-size: 70px;
   height: 0;
   width: 100%;
   overflow: hidden;
@@ -79,7 +80,7 @@
   -webkit-text-stroke: 2px var(--clr-pri);
   color: transparent;
   font-family: Poppins, sans-serif;
-  font-size: 90px;
+  font-size: 60px;
 }
 
 .content h1 d {
@@ -96,12 +97,12 @@
   align-items: center;
   justify-content: center;
   border-radius: 100px;
+  margin-bottom: 50px;
   padding: 19px 35px;
   background-color: var(--clr-pri);
-  margin-top: 90px;
   text-decoration: none;
   user-select: none;
-  /* opacity: 0; */
+  opacity: 0;
   cursor: pointer;
   animation: show 1s ease 3.4s forwards;
 }
@@ -114,9 +115,19 @@
     color: white;
     font-family: Nova Round, cursive;
     font-size: 20px;
-    font-weight:100 ;
+    font-weight:100;
     text-transform: uppercase;
 
+}
+
+h1.typewritter-text{
+  width: 80vw;
+  height: 20%;
+    font-size: 40px;
+}
+h1.typewritter-text1{
+    font-size: 40px;
+    
 }
 
 @media (max-width: 850px) {

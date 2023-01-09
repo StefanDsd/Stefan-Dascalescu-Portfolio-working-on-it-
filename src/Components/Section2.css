@@ -97,6 +97,7 @@
 
 .section2.active .text-content .text2 h1 span {
   animation: animate-exp 1s ease 2s forwards;
+  /* animation-iteration-count: infinite; */
 }
 
 @keyframes animate-exp {
