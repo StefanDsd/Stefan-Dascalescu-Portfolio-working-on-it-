@@ -25,7 +25,7 @@ function Home() {
             <h1>
                 <c>eXplore</c> my <d>portfolio</d>
             </h1>
-            <a href="#collection" className='show-me'>
+            <a href="#Collection" className='show-me'>
                 <span> show me</span>
                  </a>
                   {/* typewritter effect  */}
