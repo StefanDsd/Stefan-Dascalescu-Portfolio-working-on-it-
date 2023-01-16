@@ -7,9 +7,9 @@ import Typewriter from 'typewriter-effect'
 const introdata = {
   title: "I’m Stefan Dascalescu",
   animated: {
-      first: "I love coding",
-      second: "I code cool websites",
-      third: "I love to travel",
+      first: "< I love coding />",
+      second: "< I code websites />",
+      third: "< I love to travel />",
   },
   description: "",
 }
@@ -23,7 +23,7 @@ function Home() {
         
         <div className="content">
             <h1>
-                <c>eXplore</c> my <d>portfolio</d>
+                <c>eXplore</c> my <d>Website</d>
             </h1>
             <a href="#Collection" className='show-me'>
                 <span> show me</span>

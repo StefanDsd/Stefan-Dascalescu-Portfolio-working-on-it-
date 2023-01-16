@@ -1,7 +1,7 @@
 .section2 {
   position: relative;
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   justify-content: flex-start;
   align-items: flex-start;
   width: 80vw;
@@ -13,19 +13,22 @@
 .section2 .text-content {
   position: relative;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
-  align-items: center;
-  margin-top: 25px;
-  width: 100%;
+  gap: 10vw;
+  /* align-items: center; */
+  /* margin-top: 25px; */
+  width: 60%;
 }
 
 .text-content .text {
   position: relative;
-  display: flex;
-  flex-direction: column;
-  max-width: 50%;
-  align-items: center;
-  justify-content: center;
+  margin-top: 8vh;
+  /* display: flex; */
+  /* flex-direction: column; */
+  max-width: 70%;
+  /* align-items: center;
+  justify-content: center; */
 }
 
 .text-content .text h1 {
@@ -110,10 +113,12 @@
   position: relative;
   align-items: center;
   display: flex;
+  flex-direction: column;
   justify-content: flex-start;
   align-self: center;
-  margin-top: 150px;
-  gap: 80px;
+  left: 25%;
+  /* margin-top: 150px; */
+  gap: 60px;
 }
 
 .progress::before {
@@ -149,6 +154,34 @@
     border: 2px solid var(--clr-pri)
 }
 
+h1.about__heading {
+  margin-bottom: 10px;
+  font-weight: 700;
+  text-align: start;
+  font-family: Varela Round, cursive;
+  font-size: 60px;
+}
+
 @media (max-width: 850px) {
-    
+  .section2 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 70vw;
+    min-height: 50vh;
+    padding: 0 15px;
+    scroll-snap-align: start;
+  }
+  .section2 .text-content {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 30vw;
+    /* align-items: center; */
+    margin-top: 25px;
+    width: 40vw;
+  }
 }
