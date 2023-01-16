@@ -1,0 +1,122 @@
+.contact {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    min-height: 100vh;
+    padding: 0 15px;
+    width: 80vw;
+    scroll-snap-align: start;
+
+}
+
+.contact h1 {
+    position: relative;
+    display: inline-flex;;
+    color: rgba(255, 255, 255, 0.788);
+    font-family: Varela Round , cursive;
+    font-size: 40px;
+    margin-top: 15px;
+}
+
+.contact h1 b{
+    /* opacity: 0; */
+}
+
+.contact.active h1 b{
+    animation: show 1s ease 0.5s forwards;
+}
+
+.contact h1 span {
+    position: relative;
+    display: inline-flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background: linear-gradient(50deg, var(--clr-pri), var(--clr-sec));
+    -webkit-text-fill-color: transparent;
+    background-clip: text ;
+    -webkit-background-clip: text;
+    height: 0;
+
+}
+
+.contact.active h1 span{
+    animation: animate-contact 1s ease 1.5s forwards;
+
+}
+
+@keyframes animate-contact{
+    to{
+        height: 48px;
+    }
+}
+
+.contact h1 span::before{
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 100%;
+    background: linear-gradient(50deg, var(--clr-pri), var(--clr-sec));
+    bottom: 0;
+
+}
+
+.contact.active h1 span::before {
+    animation: expand 1s ease 0.7 forwards;
+}
+
+.contact .socials{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    width: 100%;
+    /* opacity: 0; */
+}
+
+.contact.active.socials{
+    animation: show 1s ease 2s forwards;
+}
+
+.contact .socials .icon {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgba(255, 255, 255, 0.699);
+    border-radius: 10%;
+    cursor: pointer;
+    padding: 20px;
+    transition: transform  0.2 ease;
+}
+
+.contact.socials.icon::before {
+    position: absolute;
+    content: "";
+    top: calc(100% * 2px);
+    height: 45vh;
+    width: 2px;
+    background-color: rgba(255, 255, 255, 0.575);
+}
+
+.contact .socials .icon::after {
+    position: absolute;
+    content: "";
+    top: calc(100% * 2px);
+    height: 0;
+    width: 2px;
+    background-color: var(--c);
+    transition: 0.2s 0.1s
+
+}
+
+.contact .socials .icon:hover::after {
+    height: 4vh;
+
+}
+
+.contact.socials.icon:hover {
+    border: 2px solid var(--c);
+    transform: translateY(-20px);
+}

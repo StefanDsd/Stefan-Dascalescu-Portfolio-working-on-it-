@@ -103,5 +103,15 @@ header h2 p {
 }
 
 @media( max-width: 850px ) {
+header h2 {
+  display: none;
+}
 
+header .text{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 1.2em;
+   
+}
 }
