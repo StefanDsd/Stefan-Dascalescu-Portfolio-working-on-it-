@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import aboutImg from "../assets/myImage.jpg";
 import "./Section2.css";
 
 // function that will run once when the browser loads //
@@ -49,7 +48,11 @@ function Section2() {
           </h2>
         </div>
       </div>
-      <div className="progress">
+
+      <div className="aboutme-icons">
+        
+      </div>
+      {/* <div className="progress">
             <div className="container" style={{"--x": 1 }}>
                 <h1>1</h1>
                 <span>Lorem</span>
@@ -62,7 +65,7 @@ function Section2() {
                 <h1>3</h1>
                 <span>Lorem</span>
             </div>
-        </div>
+        </div> */}
     </div>
   );
 }

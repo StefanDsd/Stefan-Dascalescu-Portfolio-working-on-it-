@@ -1,12 +1,9 @@
 import React, { useEffect, useState } from "react";
 import "./Projects.css";
 
-
 function Projects(slides) {
   const [active, setActive] = useState(false);
   const [current, setCurrent] = useState(0);
-
- 
 
   useEffect(() => {
     function scrollAnimation() {
@@ -23,13 +20,14 @@ function Projects(slides) {
     window.addEventListener("scroll", scrollAnimation);
   }, []);
 
-
-
   return (
     <div className={`collection ${active && "active"}`} id="Collection">
       <h1>
         my <span>Projects</span>
       </h1>
+      <div className="projects">
+        
+      </div>
     </div>
   );
 }
