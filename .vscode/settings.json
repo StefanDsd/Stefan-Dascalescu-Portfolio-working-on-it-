@@ -1,0 +1,8 @@
+{
+    "conventionalCommits.scopes": [
+        "Home Page",
+        "navbar",
+        "About me ",
+        "my projects"
+    ]
+}
